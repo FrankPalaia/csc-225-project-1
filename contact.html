@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a class="child" href="index.html"><span class="material-icons">home</span> Home</a></div>
+            <div><a class="child" href="about.html"><span class="material-icons">info</span>About</a></div>
+            <div><a class="child" href="contact.html"><span class="material-icons">contact_page</span>Contact</a></div>
+        </nav>
+    </header>
+    <div class="card">
+    <form>
+        <p>
+            <label for="firstName">First Name:* </label>
+            <input type="text" name="firstName" id="firstName" required placeholder="First Name">
+        </p>
+        <p>
+            <label for="lastName">Last Name:* </label>
+            <input type="text" name="lastName" id="lastName" required placeholder="Last Name">
+        </p>
+        <p>
+            <label for="email"><span class="material-icons">
+                email
+                </span>
+                Email*:
+            </label>
+            <input id="email" name="email" type="email" placeholder="something@domain.com" required>
+        </p>
+        <p>
+            <label for="question">Question/Inquiries:</label>
+            <textarea placeholder="Enter your question..." id="question" name="question" cols="50" rows="3"></textarea>
+        </p>
+        <fieldset>
+        <legend>Profession/Title</legend>
+        <p><input type="radio" name="title" id="student" value="stud"><label for="student">Student/Colleague</label></p>
+        <p><input type="radio" name="title" id="recruit" value="rec"><label for="recruit">Recruiter/Employeer</label></p>
+        <p><input type="radio" name="title" id="professor" value="prof"><label for="prof">Professor/Teacher</label></p>
+        <p><input type="radio" name="title" id="othertitle" value="other"><label for="othertitle">Other</label></p>
+        <p>
+            <label for="difftitle">If other please indicate:</label>
+            <textarea placeholder="Enter other major/area ..." id="difftitle" name="difftitle" cols="30" rows="1"></textarea>
+        </p>
+        </fieldset>
+        <p>
+            <label for="area">Major/Area of Expertise (Select all that apply)</label>
+                <input type="checkbox" name="area" id="compsci" value="compsci"><label for="compsci">Computer Science</label>
+                <input type="checkbox" name="area" id="engineer" value="engineer"><label for="engineer">Engineering</label>
+                <input type="checkbox" name="area" id="math" value="math"><label for="math">Mathematics</label>
+                <input type="checkbox" name="area" id="otherarea" value="other"><label for="other">Other</label>
+        </p>
+        <p>
+            <label for="diffarea">If other please indicate:</label>
+            <textarea placeholder="Enter other major/area ..." id="diffarea" name="diffarea" cols="30" rows="1"></textarea>
+        </p>
+        <p>
+            <label for="feedback">Feedback:</label>
+            <select name="feedback" id="feedback">
+                <option value="">- How did I do?-</option>
+                <option value="Exc">Incredible, Perfection!</option>
+                <option value="Exc">Excellent, almost perfect!</option>
+                <option value="good">Pretty Good, just a bit more</option>
+                <option value="not">Not bad, needs a couple of things here and there</option>
+                <option value="need">Needs more work . . .</option>
+            </select>
+        </p>
+        <p><input type="submit"></p>
+        <p><i>* Required</i></p>
+    </form>
+</div>
+</body>
+</html>
